@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Debounce/debounce.vhd 2021/12/19.23:32:09 P.20131013
+EN work/debounce 1639945931 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Debounce/debounce.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/debounce/Behavioral 1639945932 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Debounce/debounce.vhd \
+      EN work/debounce 1639945931
