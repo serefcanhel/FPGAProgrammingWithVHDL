@@ -1,0 +1,9 @@
+V3 6
+FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/top.vhd 2022/01/28.23:07:37 P.20131013
+EN work/top 1643400471 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/top/Behavioral 1643400472 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/top.vhd \
+      EN work/top 1643400471

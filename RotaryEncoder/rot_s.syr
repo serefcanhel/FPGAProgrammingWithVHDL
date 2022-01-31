@@ -1,0 +1,509 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: rot_s.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "rot_s.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "rot_s"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : rot_s
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/top.vhd" in Library work.
+Architecture behavioral of Entity rot_s is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <rot_s> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <rot_s> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/top.vhd" line 45: Mux is complete : default of case is discarded
+Entity <rot_s> analyzed. Unit <rot_s> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <rot_s>.
+    Related source file is "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/top.vhd".
+WARNING:Xst:646 - Signal <center_flag> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8-bit register for signal <led>.
+    Found 32-bit adder for signal <$add0000> created at line 75.
+    Found 1-bit register for signal <delay_rotary_q1>.
+    Found 32-bit up counter for signal <i>.
+    Found 32-bit subtractor for signal <i$sub0000> created at line 84.
+    Found 1-bit register for signal <rotary_event>.
+    Found 2-bit register for signal <rotary_in>.
+    Found 1-bit register for signal <rotary_left>.
+    Found 1-bit register for signal <rotary_q1>.
+    Found 1-bit 4-to-1 multiplexer for signal <rotary_q1$mux0000> created at line 37.
+    Found 1-bit register for signal <rotary_q2>.
+    Found 1-bit 4-to-1 multiplexer for signal <rotary_q2$mux0000> created at line 37.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Multiplexer(s).
+Unit <rot_s> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 14
+ 1-bit register                                        : 13
+ 2-bit register                                        : 1
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 15
+ Flip-Flops                                            : 15
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <rot_s> ...
+WARNING:Xst:2677 - Node <i_3> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_4> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_5> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_6> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_7> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_8> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_9> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_10> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_11> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_12> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_13> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_14> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_15> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_16> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_17> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_18> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_19> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_20> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_21> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_22> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_23> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_24> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_25> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_26> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_27> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_28> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_29> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_30> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_31> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_3> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_4> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_5> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_6> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_7> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_8> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_9> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_10> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_11> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_12> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_13> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_14> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_15> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_16> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_17> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_18> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_19> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_20> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_21> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_22> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_23> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_24> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_25> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_26> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_27> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_28> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_29> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_30> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_31> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_3> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_4> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_5> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_6> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_7> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_8> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_9> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_10> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_11> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_12> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_13> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_14> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_15> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_16> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_17> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_18> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_19> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_20> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_21> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_22> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_23> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_24> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_25> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_26> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_27> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_28> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_29> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_30> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_31> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_3> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_4> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_5> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_6> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_7> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_8> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_9> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_10> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_11> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_12> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_13> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_14> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_15> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_16> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_17> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_18> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_19> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_20> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_21> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_22> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_23> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_24> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_25> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_26> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_27> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_28> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_29> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_30> of sequential type is unconnected in block <rot_s>.
+WARNING:Xst:2677 - Node <i_31> of sequential type is unconnected in block <rot_s>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block rot_s, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : rot_s.ngr
+Top Level Output File Name         : rot_s
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 52
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 2
+#      LUT2                        : 4
+#      LUT2_D                      : 4
+#      LUT3                        : 6
+#      LUT3_L                      : 4
+#      LUT4                        : 14
+#      MUXCY                       : 6
+#      VCC                         : 1
+#      XORCY                       : 9
+# FlipFlops/Latches                : 18
+#      FD                          : 5
+#      FDE                         : 12
+#      FDR                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 10
+#      IBUF                        : 2
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       20  out of   4656     0%  
+ Number of Slice Flip Flops:             18  out of   9312     0%  
+ Number of 4 input LUTs:                 35  out of   9312     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  11  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 8.253ns (Maximum Frequency: 121.168MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.253ns (frequency: 121.168MHz)
+  Total number of paths / destination ports: 380 / 28
+-------------------------------------------------------------------------
+Delay:               8.253ns (Levels of Logic = 8)
+  Source:            i_0 (FF)
+  Destination:       i_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: i_0 to i_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.531  i_0 (i_0)
+     INV:I->O              1   0.704   0.000  Madd__add0000_lut<0>_INV_0 (Madd__add0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Madd__add0000_cy<0> (Madd__add0000_cy<0>)
+     XORCY:CI->O           9   0.804   0.824  Madd__add0000_xor<1> (_add0000<1>)
+     LUT4:I3->O            1   0.704   0.000  Msub_i_sub0000_lut<1> (Msub_i_sub0000_lut<1>)
+     MUXCY:S->O            0   0.464   0.000  Msub_i_sub0000_cy<1> (Msub_i_sub0000_cy<1>)
+     XORCY:CI->O           9   0.804   0.824  Msub_i_sub0000_xor<2> (i_sub0000<2>)
+     LUT4:I3->O            0   0.704   0.000  Mcount_i_lut<2> (Mcount_i_lut<2>)
+     XORCY:LI->O           1   0.527   0.000  Mcount_i_xor<2> (Mcount_i2)
+     FDE:D                     0.308          i_2
+    ----------------------------------------
+    Total                      8.253ns (6.074ns logic, 2.179ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            rot_a (PAD)
+  Destination:       rotary_in_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rot_a to rotary_in_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  rot_a_IBUF (rot_a_IBUF)
+     FD:D                      0.308          rotary_in_0
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            led_7 (FF)
+  Destination:       led<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: led_7 to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  led_7 (led_7)
+     OBUF:I->O                 3.272          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.77 secs
+ 
+--> 
+
+Total memory usage is 4515488 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  117 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

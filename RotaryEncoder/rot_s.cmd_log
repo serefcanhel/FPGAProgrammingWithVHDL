@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/rot_s.xst" -ofn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/RotaryEncoder/rot_s.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc rot_s.ucf -p xc3s500e-fg320-4 rot_s.ngc rot_s.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o rot_s_map.ncd rot_s.ngd rot_s.pcf 
+par -w -intstyle ise -ol high -t 1 rot_s_map.ncd rot_s.ncd rot_s.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml rot_s.twx rot_s.ncd -o rot_s.twr rot_s.pcf -ucf rot_s.ucf 
+bitgen -intstyle ise -f rot_s.ut rot_s.ncd 
