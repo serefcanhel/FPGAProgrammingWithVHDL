@@ -1,0 +1,9 @@
+V3 3
+FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/SequentialLogicExample/top.vhd 2021/12/19.22:36:16 P.20131013
+EN work/top 1639942577 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/SequentialLogicExample/top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/top/Behavioral 1639942578 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/SequentialLogicExample/top.vhd \
+      EN work/top 1639942577

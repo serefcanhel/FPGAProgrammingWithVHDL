@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Dec 19 22:24:36 2021
+# Process ID: 13864
+# Log file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/SequentialLogicExample/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/SequentialLogicExample/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/SequentialLogicExample/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin F9 [get_ports {counter[7]}]
+endgroup
+startgroup
+set_property package_pin E9 [get_ports {counter[6]}]
+endgroup
+startgroup
+set_property package_pin D11 [get_ports {counter[5]}]
+endgroup
+startgroup
+set_property package_pin C11 [get_ports {counter[4]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {counter[3]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {counter[2]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {counter[1]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {counter[0]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {sw[1]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {sw[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  clk]]
+save_constraints
+set_property package_pin "" [get_ports [list  clk]]
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+save_constraints

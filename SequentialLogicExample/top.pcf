@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Dec 19 22:36:25 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "counter<5>" LOCATE = SITE "D11" LEVEL 1;
+COMP "counter<6>" LOCATE = SITE "E9" LEVEL 1;
+COMP "counter<7>" LOCATE = SITE "F9" LEVEL 1;
+COMP "clk" LOCATE = SITE "C9" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "counter<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "counter<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "counter<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "counter<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "counter<4>" LOCATE = SITE "C11" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+
