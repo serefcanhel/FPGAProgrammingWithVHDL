@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Dec 05 23:04:02 2021
+# Process ID: 15420
+# Log file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin H18 [get_ports s1]
+endgroup
+set_property is_loc_fixed false [get_ports [list  s1]]
+set_property is_loc_fixed true [get_ports [list  s1]]
+save_constraints

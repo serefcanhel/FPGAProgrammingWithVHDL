@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/mux2x1.vhd 2021/12/05.23:02:45 P.20131013
+EN work/mux2x1 1638734605 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/mux2x1.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux2x1/Behavioral 1638734606 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/mux2x1.vhd \
+      EN work/mux2x1 1638734605

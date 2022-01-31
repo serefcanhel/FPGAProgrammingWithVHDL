@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/mux2x1.xst" -ofn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/mux2x1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mux2x1.ucf -p xc3s500e-fg320-4 mux2x1.ngc mux2x1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o mux2x1_map.ncd mux2x1.ngd mux2x1.pcf 
+par -w -intstyle ise -ol high -t 1 mux2x1_map.ncd mux2x1.ncd mux2x1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mux2x1.twx mux2x1.ncd -o mux2x1.twr mux2x1.pcf -ucf mux2x1.ucf 
+bitgen -intstyle ise -f mux2x1.ut mux2x1.ncd 
+xst -intstyle ise -ifn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/mux2x1.xst" -ofn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/Mux2x1/mux2x1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mux2x1.ucf -p xc3s500e-fg320-4 mux2x1.ngc mux2x1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o mux2x1_map.ncd mux2x1.ngd mux2x1.pcf 
+par -w -intstyle ise -ol high -t 1 mux2x1_map.ncd mux2x1.ncd mux2x1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mux2x1.twx mux2x1.ncd -o mux2x1.twr mux2x1.pcf -ucf mux2x1.ucf 
+bitgen -intstyle ise -f mux2x1.ut mux2x1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mux2x1.ucf -p xc3s500e-fg320-4 mux2x1.ngc mux2x1.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o mux2x1_map.ncd mux2x1.ngd mux2x1.pcf 
+par -w -intstyle ise -ol high -t 1 mux2x1_map.ncd mux2x1.ncd mux2x1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mux2x1.twx mux2x1.ncd -o mux2x1.twr mux2x1.pcf -ucf mux2x1.ucf 
+bitgen -intstyle ise -f mux2x1.ut mux2x1.ncd 

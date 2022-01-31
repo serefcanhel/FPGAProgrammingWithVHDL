@@ -1,0 +1,9 @@
+
+
+NET "a_i" LOC = L13;
+NET "b_i" LOC = L14;
+NET "out1" LOC = F12;
+
+# PlanAhead Generated physical constraints 
+
+NET "s1" LOC = H18;
