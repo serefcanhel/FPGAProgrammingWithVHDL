@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Serefcan\Desktop\Seref\FPGA_Codes\NbitAdder\impact.xsl
+OUTFILE=C:\Users\Serefcan\Desktop\Seref\FPGA_Codes\NbitAdder\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\Serefcan\Desktop\Seref\FPGA_Codes\NbitAdder
+LICENSE=iMPACT
+USER_INFO=iMPACT

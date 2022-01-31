@@ -1,0 +1,4 @@
+vhdl work "C:\Users\Serefcan\Desktop\Seref\FPGA_Codes\NbitAdder\half_adder.vhd"
+vhdl work "C:\Users\Serefcan\Desktop\Seref\FPGA_Codes\NbitAdder\full_adder.vhd"
+vhdl work "C:\Users\Serefcan\Desktop\Seref\FPGA_Codes\NbitAdder\nbit_adder.vhd"
+vhdl work "C:\Users\Serefcan\Desktop\Seref\FPGA_Codes\NbitAdder\top.vhd"

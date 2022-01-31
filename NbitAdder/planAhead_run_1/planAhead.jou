@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Dec 04 22:22:25 2021
+# Process ID: 15508
+# Log file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin N17 [get_ports {SW[3]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {SW[2]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {SW[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {SW[0]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {LED[0]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {LED[1]}]
+endgroup
+save_constraints

@@ -1,0 +1,8 @@
+EN nbit_adder NULL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/nbit_adder.vhd sub00/vhpl04 1638645738
+EN half_adder NULL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/half_adder.vhd sub00/vhpl00 1638645734
+AR nbit_adder behavioral C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/nbit_adder.vhd sub00/vhpl05 1638645739
+EN top NULL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/top.vhd sub00/vhpl06 1638645740
+EN full_adder NULL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/full_adder.vhd sub00/vhpl02 1638645736
+AR full_adder behavioral C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/full_adder.vhd sub00/vhpl03 1638645737
+AR half_adder behavioral C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/half_adder.vhd sub00/vhpl01 1638645735
+AR top behavioral C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/NbitAdder/top.vhd sub00/vhpl07 1638645741
