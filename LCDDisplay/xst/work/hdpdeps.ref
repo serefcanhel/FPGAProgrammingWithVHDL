@@ -1,0 +1,9 @@
+V3 3
+FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD.vhd 2022/01/28.13:49:09 P.20131013
+EN work/LCD 1643370035 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/LCD/Behavioral 1643370036 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD.vhd \
+      EN work/LCD 1643370035

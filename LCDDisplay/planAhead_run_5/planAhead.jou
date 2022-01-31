@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Jan 28 23:56:15 2022
+# Process ID: 4208
+# Log file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/planAhead_run_5/planAhead.log
+# Journal file: C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin M18 [get_ports LCD_E]
+endgroup
+startgroup
+set_property package_pin L18 [get_ports LCD_RS]
+endgroup
+startgroup
+set_property package_pin L17 [get_ports LCD_RW]
+endgroup
+startgroup
+set_property package_pin R15 [get_ports {SF_D[3]}]
+endgroup
+startgroup
+set_property package_pin R16 [get_ports {SF_D[2]}]
+endgroup
+startgroup
+set_property package_pin P17 [get_ports {SF_D[1]}]
+endgroup
+startgroup
+set_property package_pin M15 [get_ports {SF_D[0]}]
+endgroup
+save_constraints

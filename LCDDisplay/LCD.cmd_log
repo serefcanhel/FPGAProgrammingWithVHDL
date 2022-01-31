@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD.xst" -ofn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -p xc3s500e-fg320-4 LCD.ngc LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCD_map.ncd LCD.ngd LCD.pcf 
+par -w -intstyle ise -ol high -t 1 LCD_map.ncd LCD.ncd LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCD.twx LCD.ncd -o LCD.twr LCD.pcf -ucf LCD.ucf 
+bitgen -intstyle ise -f LCD.ut LCD.ncd 
+xst -intstyle ise -ifn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD.xst" -ofn "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -p xc3s500e-fg320-4 LCD.ngc LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCD_map.ncd LCD.ngd LCD.pcf 
+par -w -intstyle ise -ol high -t 1 LCD_map.ncd LCD.ncd LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCD.twx LCD.ncd -o LCD.twr LCD.pcf -ucf LCD.ucf 
+bitgen -intstyle ise -f LCD.ut LCD.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc LCD.ucf -p xc3s500e-fg320-4 LCD.ngc LCD.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o LCD_map.ncd LCD.ngd LCD.pcf 
+par -w -intstyle ise -ol high -t 1 LCD_map.ncd LCD.ncd LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml LCD.twx LCD.ncd -o LCD.twr LCD.pcf -ucf LCD.ucf 
+bitgen -intstyle ise -f LCD.ut LCD.ncd 

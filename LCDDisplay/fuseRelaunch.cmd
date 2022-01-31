@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD_isim_beh.exe" -prj "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/LCDDisplay/LCD_beh.prj" "work.LCD" 
