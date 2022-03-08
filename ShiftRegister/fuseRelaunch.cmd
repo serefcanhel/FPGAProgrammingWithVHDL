@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/ShiftRegister/test_ShiftReg_isim_beh.exe" -prj "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/ShiftRegister/test_ShiftReg_beh.prj" "work.test_ShiftReg" 

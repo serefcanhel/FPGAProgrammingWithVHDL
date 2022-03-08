@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/ShiftRegister/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/ShiftRegister/xst"
+elaborate
+-ifn ShiftReg.prj
+-ifmt mixed

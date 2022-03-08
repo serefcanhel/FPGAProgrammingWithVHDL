@@ -1,0 +1,29 @@
+Command line:
+   test_ShiftReg_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62635
+
+Fri Mar 04 16:23:29 2022
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5808.3 Meg
+
+ Total Signals          : 18
+ Total Nets             : 11
+ Total Signal Drivers   : 10
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 7
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 495
+Total Line Count : 19
+
+ Total Simulation Time: 0.3125 sec
+
+ Current Memory Usage: 4707.29 Meg
+
+Fri Mar 04 16:56:18 2022
+

@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/ShiftRegister/ShiftReg.vhd 2022/03/04.16:16:41 P.20131013
+EN work/ShiftReg 1646400195 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/ShiftRegister/ShiftReg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ShiftReg/Behavioral 1646400196 \
+      FL C:/Users/Serefcan/Desktop/Seref/FPGA_Codes/ShiftRegister/ShiftReg.vhd \
+      EN work/ShiftReg 1646400195
