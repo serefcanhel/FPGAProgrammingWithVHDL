@@ -31,4 +31,9 @@
         ==> If the switches are "01" then counter counts with 1 sec.
         ==> If the switches are "10" then counter counts with 500 ms.
         ==> If the switches are "11" then counter counts with 250 ms.
-        
+   
+   # ShiftRegister
+      
+      * Shift Register applicaiton is implemented and simulated.
+      * In this application, 4-bit shift register is implemented. Also, the test bench is written in this application.
+      * The top module and test bench module can be found in the files.
